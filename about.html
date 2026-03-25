@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body onload="initializeSampleProducts(); checkAuth('user');">
+    <nav class="navbar">
+        <a href="./user.html" class="logo">AURORA</a>
+
+        <ul class="nav-links" id="navLink">
+            <li><a href="./user.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#" id="logout">LogOut</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="menuToggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hearttoggle" id="heart-toggle">
+                <i class="fa-regular fa-heart"></i>
+                <sup class="heart-count" id="heart-count">0</sup>
+                <div class="heart-dropdown" id="heart-dropdown"></div>
+            </div>
+            <div class="carttoggle" id="cart-toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <sup class="cart-count" id="cart-count">0</sup>
+                <div class="cart-dropdown" id="cart-dropdown"></div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="about">
+        <h1>About Us</h1>
+    </div>
+
+    <section class="our">
+        <div class="ima">
+            <img src="./images/about.avif" alt="Luxury Watch Craftsmanship">
+        </div>
+
+        <div class="info">
+            <h4>OUR HERITAGE</h4>
+            <h1>Crafting Time Since 1924</h1>
+
+            <p>
+                Founded in 1924, AURORA has been at the forefront of horological excellence
+                for a century. What began as a small workshop in Switzerland has evolved
+                into a global symbol of luxury and precision.
+            </p>
+
+            <p>
+                Every AURORA timepiece is meticulously assembled by master watchmakers,
+                combining traditional craftsmanship with modern innovation.
+            </p>
+
+            <button class="btn">Discover More</button>
+        </div>
+
+    </section>
+
+    <section class="who">
+
+        <div class="who-text">
+            <h4>WHO WE ARE</h4>
+            <h1>Timeless Craftsmanship</h1>
+
+            <p>
+                At AURORA, we are more than watchmakers — we are guardians of time.
+                With a heritage rooted in Swiss craftsmanship, our mission is to
+                create timepieces that blend precision engineering with timeless elegance.
+            </p>
+
+            <p>
+                Each watch is carefully designed and assembled by skilled artisans,
+                ensuring exceptional quality and performance. Our dedication to detail
+                and innovation has made AURORA a trusted name in luxury timepieces worldwide.
+            </p>
+
+        </div>
+
+        <div class="who-img">
+            <img src="./images/who.jpg" alt="Watchmaker">
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-box">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h2>Design</h2>
+            <div class="line"></div>
+            <p>Great design is where every watch begins. We focus on clean details, balanced shapes, and timeless style so each piece feels elegant today and years from now.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h2>Innovation</h2>
+            <div class="line"></div>
+            <p>We constantly explore new ideas and technologies to improve precision and performance, while still respecting the traditions of fine watchmaking.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-route"></i>
+            <h2>Journey</h2>
+            <div class="line"></div>
+            <p>Our journey is driven by passion and craftsmanship. Every step we take is about creating watches that celebrate meaningful moments and lasting memories.</p>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <h2 class="footer-logo">AURORA</h2>
+
+            <p class="footer-desc">
+                Crafting timeless elegance for the modern individual. Our
+                watches are more than just timepieces; they are a legacy.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+            <p class="footer-copy">
+                © 2024 AURORA Premium Watches. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Script here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./user.js"></script>
+    <script src="./product.js"></script>
+
+</body>
+
+</html>

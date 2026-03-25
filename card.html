@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./card.css">
+</head>
+
+<body onload="checkAuth('user');">
+
+     <section>
+        <h1>Checkout Now</h1>
+
+        <div class="contains">
+
+            <div class="container">
+
+                <div class="card" id="cardDisk">
+
+                    <div class="card-chip">
+                        <img src="./images/chip.png" alt="">
+                    </div>
+                    
+                    <div class="card-logo">VISA</div>
+
+                    <div class="card-number" id="cardNumber">
+                        #### #### #### ####
+                    </div>
+
+                    <div class="card-info">
+                        <div>
+                            <span>Card Holder</span>
+                            <p id="cardName">FULL NAME</p>
+                        </div>
+                        <div>
+                            <span>Expires</span>
+                            <p><span id="cardMonth">MM</span>/<span id="cardYear">YY</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="myCard">
+
+                    <form class="card-form">
+                        <label for="numberInput">Card Number</label>
+                        <input type="text" maxlength="19" id="numberInput"><span id="errorMsg"></span>
+
+                        <label for="nameInput">Card Holder</label>
+                        <input type="text" id="nameInput">
+
+                        <div class="row">
+                            <div>
+                                <label for="monthInput">Expiration MM</label>
+                                <select id="monthInput">
+                                    <option value="MM" >Month</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="yearInput">Expiration YY</label>
+                                <select id="yearInput">
+                                    <option value="YY">Year</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="cvvPass">CVV</label>
+                                <input type="password" maxlength="3" id="cvvPass">
+                            </div>
+                        </div>
+
+                        <button type="submit" id="btn-event">PAY NOW</button>
+                    </form>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+    <script src="checkout.js"></script>
+    <script src="./card.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:#f5f5f5;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#0f0f0f;
+border-bottom:1px solid rgba(212,175,55,0.25);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+color:#d4af37;
+text-decoration:none;
+letter-spacing:2px;
+font-family: serif;
+}
+
+.menuToggle{
+font-size:20px;
+cursor:pointer;
+color:#f5f5f5;
+display: none;
+}
+
+/* ================= LAYOUT ================= */
+
+.adminpage{
+display:flex;
+}
+
+/* --------------SIDEBAR---------------- */
+
+.asidebar{
+width:260px;
+height:90vh;
+background:linear-gradient(180deg,#0d0d0d,#050505);
+border-right:1px solid rgba(212,175,55,0.15);
+position:fixed;
+left:0;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+/* HEADER */
+
+.aside-header{
+padding:25px;
+border-bottom:1px solid rgba(212,175,55,0.08);
+}
+
+.aside-header .logo{
+font-size:26px;
+letter-spacing:4px;
+color:#d4af37;
+font-weight:600;
+text-decoration:none;
+display:block;
+margin-bottom:6px;
+}
+
+.aside-header p{
+color:#8b97a8;
+font-size:15px;
+letter-spacing:2px;
+}
+
+/* BODY */
+
+.aside-body{
+padding:20px;
+}
+
+.side-nav{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+
+.nav-item{
+display:flex;
+align-items:center;
+gap:14px;
+padding:14px 18px;
+border-radius:10px;
+color:#aab3c2;
+cursor:pointer;
+transition:all .3s ease;
+font-size:17px;
+}
+
+/* ICON */
+
+.nav-item i{
+font-size:18px;
+}
+
+/* HOVER */
+
+.nav-item:hover{
+background:#111;
+color:#fff;
+}
+
+/* ACTIVE (Dashboard Highlight) */
+
+.nav-item.active{
+background:linear-gradient(90deg,rgba(212,175,55,0.35),rgba(212,175,55,0.05));
+color:#f0c24b;
+}
+
+/* FOOTER */
+
+.aside-footer{
+padding:20px;
+border-top:1px solid rgba(212,175,55,0.08);
+}
+
+.aside-footer a{
+display:flex;
+align-items:center;
+padding: 12px;
+gap:12px;
+text-decoration:none;
+color:#aab3c2;
+font-size:16px;
+transition:.3s;
+}
+
+.aside-footer a:hover{
+    background:#111;
+    color:#fff;
+    border-radius: 9px;
+}
+
+.aside-footer i{
+font-size:18px;
+}
+
+/* MAIN CONTENT SHIFT */
+
+main{
+/* margin-left:260px; */
+padding:40px;
+}
+
+/*=============== MAIN ================= */
+
+main{
+margin-left:240px;
+padding:40px;
+width:100%;
+}
+
+/* ================= TITLES ================= */
+
+.title h1,
+section h1{
+color:#d4af37;
+margin-bottom:25px;
+letter-spacing:1px;
+font-family: 'Times New Roman', Times, serif !important;
+
+}
+
+/* ================= DASHBOARD CARDS ================= */
+
+.boxes{
+display:flex;
+flex-wrap: wrap;
+gap:25px;
+margin-bottom:40px;
+}
+
+.boxes div{
+flex:1;
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
+border:1px solid rgba(212,175,55,0.2);
+text-align:center;
+transition:0.3s;
+}
+
+.boxes div:hover{
+transform:translateY(-6px);
+box-shadow:0 0 15px rgba(212,175,55,0.25);
+}
+
+.boxes i{
+font-size:28px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.boxes h3{
+font-size:16px;
+margin-bottom:8px;
+}
+
+.boxes p{
+font-size:26px;
+font-weight:600;
+color:#d4af37;
+}
+
+/* ================= TABLE CARD ================= */
+
+.bg-card{
+background:#1c1c1c;
+border-radius:10px;
+border:1px solid rgba(212,175,55,0.15);
+padding:20px;
+margin-top:20px;
+width: 100%;
+overflow-x: auto;
+}
+
+
+/* ================= TABLE ================= */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+color:#d4af37;
+font-weight:500;
+text-align:left;
+}
+
+th,td{
+padding:14px;
+border-bottom:1px solid rgba(212,175,55,0.15);
+font-size:14px;
+}
+
+tr:hover{
+background:#141414;
+}
+
+/* ================= PRODUCT SECTION ================= */
+
+.head-section{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+.admin-product-img{
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:6px;
+border:1px solid rgba(212,175,55,0.3);
+}
+
+/* ================= GOLD BUTTON ================= */
+
+.gold-button{
+background:linear-gradient(45deg,#d4af37,#b8860b);
+border:none;
+padding:10px 20px;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gold-button:hover{
+box-shadow:0 0 15px rgba(212,175,55,0.6);
+transform:translateY(-2px);
+}
+
+.delete-btn,.sold-btn{
+height:32px;
+width:32px;
+border: none;
+background:transparent;
+cursor:pointer;
+color:#aab3c2;
+transition:0.3s ease;
+}
+
+.delete-btn:hover i{
+color:#ff3b3b;
+transform:scale(1.1);
+}
+
+.sold-btn:hover i{
+    color: #d4af37;
+    transform:scale(1.1);
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.125rem;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.status-sold { 
+    background-color: rgba(239, 68, 68, 0.2); 
+    color: #ef4444; 
+}
+
+.status-stock { 
+    background-color: rgba(16, 185, 129, 0.2); 
+    color: #10b981; 
+}
+
+
+
+/* ================= MODAL ================= */
+
+.admin-modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.7);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+.admin-modal.active{
+display:flex;
+}
+
+.modal-content{
+background:#1c1c1c;
+padding:30px;
+width:420px;
+border-radius:12px;
+border:1px solid rgba(212,175,55,0.25);
+}
+
+.modal-content h3{
+margin-bottom:20px;
+color:#d4af37;
+}
+
+/* ================= FORM ================= */
+
+.add{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.add input,
+.add select,
+.add textarea{
+background:#0f0f0f;
+border:1px solid rgba(212,175,55,0.25);
+padding:10px;
+border-radius:6px;
+color:#f5f5f5;
+}
+
+.add textarea{
+resize:none;
+height:80px;
+}
+
+.add input:focus,
+.add select:focus,
+.add textarea:focus{
+outline:none;
+border:1px solid #d4af37;
+}
+
+/* ================= MODAL BUTTONS ================= */
+
+.flex{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.flex button{
+flex:1;
+padding:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+#close-modal{
+background:#333;
+color:#fff;
+}
+
+#save-product{
+background:#d4af37;
+color:#000;
+font-weight:600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.menuToggle {
+display: block;
+}
+
+.asidebar{
+transform:translateX(-100%);
+position:fixed;
+z-index:1000;
+transition:.3s;
+}
+
+.asidebar.active{
+transform:translateX(0);
+}
+
+main{
+margin-left:0;
+padding:25px;
+}
+
+
+}
+@media(max-width:500px){
+.boxes{
+flex-direction:column;
+}
+}

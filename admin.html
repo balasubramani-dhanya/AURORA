@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+<body>
+    <div class="navbar">
+            <a href="index.html" class="logo">AURORA</a>
+            <div class="menu-icon">
+                <div class="menuToggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    </div>
+    <div class="adminpage">
+        
+        <!-- ---------- aside bar-------------- -->
+        <aside class="asidebar" id="aside">
+            
+            <div class="aside-body">
+                <div class="side-nav">
+                    <div class="nav-item active">
+                        <i class="fa-brands fa-dashcube"></i>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Customers</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <span>Products</span>
+                    </div>  
+                </div>
+            </div>
+            <div class="aside-footer">
+                <a href="./index.html" id="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>LOGOUT</span>
+                </a>
+            </div>
+        </aside>
+        <!-- ---------main section----------- -->
+        <main>
+            <section class="admin-section" id="section-dashboard">
+                <div class="title">
+                    <h1>Overview</h1>
+                </div>
+                <div class="boxes">
+                    <div class="custom">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h3>Total Coustomers</h3>
+                        <p id="coustomer-count">0</p>
+                    </div>
+                    <div class="product">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <h3>Total Prodcts</h3>
+                        <p id="product-count">0</p>
+                    </div>
+                    <div class="sales">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <h3>Total Sales</h3>
+                        <p id="sale-count">0</p>
+                    </div>
+                </div>
+                <h2 class="text-gold">Recent Orders</h2>
+                <div class="bg-card">
+                    <table class="text-left ">
+                        <thead class="text-gold">
+                            <tr>
+                                <th class="p-4">Order ID</th>
+                                <th class="p-4">Customer</th>
+                                <th class="p-4">Date</th>
+                                <th class="p-4">Total</th>
+                                <th class="p-4">Address</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-sales-list" class="admin-sales">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="admin-section" id="section-customer">
+                <h1>Customers List</h1>
+                <div class="bg-card">
+                    <table class="text-left">
+                        <thead class="text-gold">
+                            <tr>
+                                <th class="p-4">Customer ID</th>
+                                <th class="p-4">Name</th>
+                                <th class="p-4">Email</th>
+                                <th class="p-4">Join Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-customer-list" class="admin-customer">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="admin-section" class="section-product">
+                <div class="head-section">
+                    <h1 class="font-serif">Products</h1>
+                    <button id="add-product-btn" class="gold-button">Add New Product</button>
+                </div>
+                <div class="bg-card">
+                    <table class="text-left">
+                        <thead class="bg-black text-gold">
+                            <tr>
+                                <th class="p-4">Image</th>
+                                <th class="p-4">Product</th>
+                                <th class="p-4">Category</th>
+                                <th class="p-4">Price</th>
+                                <th class="p-4">Status</th>
+                                <th class="p-4">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-product-list" class="admin-product">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <!-- Add Product -->
+        <div id="admin-modal" class="admin-modal">
+            <div class="modal-content">
+                <h3 class="text-2xl font-serif mb-6 text-gold">Add New Timepiece</h3>
+                <div class="add">
+                    <input id="new-name" type="text" placeholder="Product Name">
+                    <input id="new-price" type="number" placeholder="Price">
+                    <input id="new-offer" type="number" placeholder="Discount">
+
+                    <select id="new-category">
+                        <option value="him">For Him</option>
+                        <option value="her">For Her</option>
+                        <option value="kid">For Kid</option>
+                    </select>
+                    <input id="new-image" type="text" placeholder="Image URL">
+                    <textarea id="new-desc" placeholder="Description"></textarea>
+                    <div class="flex">
+                        <button id="close-modal" class="flex-1">Cancel</button>
+                        <button id="save-product" class="flex-1">Save Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+<!-- script here -->
+    <script src="./admin.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

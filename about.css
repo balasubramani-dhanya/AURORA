@@ -1,0 +1,228 @@
+.about{
+    background: url("https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1200,h=600,dpr=2.0/2023/01/Omega-2-1-1.jpg");
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradient 10s ease infinite;
+}
+.about::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.about h1{
+    position: relative;
+    z-index: 1;
+    font-size: 44px;
+    animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.our{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 10%;
+}
+
+.ima{
+    flex: 1;
+}
+
+.ima img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.info{
+    flex: 1;
+}
+
+.info h4{
+    color:#d4af37;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.info h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.info p{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    color: #111;
+    background-color: #d4af37;
+}
+
+.who{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 10%;
+}
+
+.who-text{
+    flex: 1;
+}
+
+.who-text h4{
+    color:#d4af37;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.who-text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.who-text p{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.who-img{
+    flex: 1;
+}
+
+.who-img img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.features{
+    background: url("https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1200,h=600,dpr=2.0/2023/01/Omega-2-1-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 10%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    gap: 20px;
+}
+
+.features::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.feature-box{
+    position: relative;
+    z-index: 2;
+    width: 30%;
+}
+
+.feature-box i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.feature-box h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.feature-box p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.line{
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 10px auto 20px;
+}
+
+.feature-box{
+    transition: 0.4s;
+}
+
+.feature-box:hover{
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px){
+.about{
+    animation: gradient 150s ease infinite;
+}
+.our{
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.info h1{
+    font-size: 32px;
+}
+
+.who{
+    flex-direction: column;
+    text-align: center;
+}
+
+.who-text h1{
+    font-size: 32px;
+}
+
+
+}

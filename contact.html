@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body onload="checkAuth('user');">
+    <nav class="navbar">
+        <a href="user.html" class="logo">AURORA</a>
+
+        <ul class="nav-links" id="navLink">
+            <li><a href="user.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#" id="logout">LogOut</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="menuToggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hearttoggle" id="heart-toggle">
+                <i class="fa-regular fa-heart"></i>
+                <sup class="heart-count" id="heart-count">0</sup>
+                <div class="heart-dropdown" id="heart-dropdown"></div>
+            </div>
+            <div class="carttoggle" id="cart-toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <sup class="cart-count" id="cart-count">0</sup>
+                <div class="cart-dropdown" id="cart-dropdown"></div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>Our team is ready to assist you with any inquiries about our collections or services.</p>
+            </div>
+
+        <section class="contact-page">
+
+            
+
+            <div class="contact-info-container">
+
+                <div class="contact-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Visit Our Atelier</h3>
+                    <p>Rue du Rhône 12, 1204 Genève, Switzerland</p>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+41 22 123 45 67</p>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>concierge@AURORA-watches.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-form-wrapper">
+
+                <h2>Send a Message</h2>
+
+                <form class="contact-form">
+
+                    <div class="contact-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+
+                    <input type="text" placeholder="Subject" required>
+
+                    <textarea placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Map Section -->
+
+        <section class="map-section">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.75589970226!2d72.71353792876181!3d19.08175871029341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1773563045735!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="map-content">
+                <i class="fa-solid fa-map"></i>
+                <h3>Find us in Mumbai</h3>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <h2 class="footer-logo">AURORA</h2>
+
+            <p class="footer-desc">
+                Crafting timeless elegance for the modern individual. Our
+                watches are more than just timepieces; they are a legacy.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+            <p class="footer-copy">
+                © 2024 AURORA Premium Watches. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Script here -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./user.js"></script>
+    <script src="./product.js"></script>
+
+</body>
+
+</html>

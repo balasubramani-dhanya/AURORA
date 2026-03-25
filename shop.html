@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body onload="initializeSampleProducts(); checkAuth('user');">
+    <nav class="navbar">
+        <a href="./user.html" class="logo">AURORA</a>
+
+        <ul class="nav-links" id="navLink">
+            <li><a href="user.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#" id="logout">LogOut</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="menuToggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hearttoggle" id="heart-toggle">
+                <i class="fa-regular fa-heart"></i>
+                <sup class="heart-count" id="heart-count">0</sup>
+                <div class="heart-dropdown" id="heart-dropdown"></div>
+            </div>
+            <div class="carttoggle" id="cart-toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <sup class="cart-count" id="cart-count">0</sup>
+                <div class="cart-dropdown" id="cart-dropdown"></div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <section class="shop-page">
+        <div class="container">
+            <div class="shop-layout">
+                <aside class="sidebar">
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <ul class="filter-list" id="category-filters">
+                            <li><label><input type="checkbox" value="all"> All</label></li>
+                            <li><label><input type="checkbox" value="her"> Her</label></li>
+                            <li><label><input type="checkbox" value="him"> Him</label></li>
+                            <li><label><input type="checkbox" value="kids"> Kids</label></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <input type="range" id="price-range" min="0" max="1200000" step="500" value="1200000">
+                        <div class="price-labels">
+                            <span>₹0</span>
+                            <span id="price-value">₹1,200,000</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Material</h4>
+                        <ul class="filter-list" id="material-filters">
+                            <li><label><input type="checkbox" value="Stainless Steel"> Stainless Steel</label></li>
+                            <li><label><input type="checkbox" value="Gold"> Gold</label></li>
+                            <li><label><input type="checkbox" value="Leather Strap"> Leather Strap</label></li>
+                            <li><label><input type="checkbox" value="Titanium"> Titanium</label></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <main class="shop-main">
+                    <div class="shop-header">
+                        <h2 id="shop-title">All Products</h2>
+                        <div class="shop-controls">
+                            <select id="sort-by">
+                                <option value="default">Sort by: Default</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Rating</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-grid" id="shopproducts">
+                        <!-- Products loaded via JS -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <h2 class="footer-logo">AURORA</h2>
+
+            <p class="footer-desc">
+                Crafting timeless elegance for the modern individual. Our
+                watches are more than just timepieces; they are a legacy.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+            <p class="footer-copy">
+                © 2024 AURORA Premium Watches. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    
+
+
+    <!-- Script here -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <script src="./index.js"></script>
+    <script src="./user.js"></script>
+    <script src="./product.js"></script>
+    <script src="./shop.js"></script>
+    
+</body>
+
+</html>

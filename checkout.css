@@ -1,0 +1,215 @@
+.link a{
+    text-decoration: none;
+    color: #eee;
+}
+.link a:hover{
+    color: #d4af37;
+}
+
+.title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+
+.checkout-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:40px;
+max-width:1200px;
+margin:40px auto;
+padding:20px;
+}
+
+/* CARDS */
+
+.card{
+background:#111;
+padding:30px;
+border-radius:10px;
+margin-bottom:30px;
+border:1px solid rgba(212,175,55,0.2);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:20px;
+font-size:20px;
+}
+
+/* FORM */
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.form-grid input{
+padding:12px;
+border:1px solid #333;
+background:#000;
+color:#fff;
+border-radius:5px;
+}
+
+.form-grid input:focus{
+outline:none;
+border-color:#d4af37;
+}
+
+.full{
+grid-column:span 2;
+}
+
+/* PAYMENT */
+
+.payment-option{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px;
+border:1px solid #333;
+border-radius:5px;
+margin-bottom:10px;
+cursor:pointer;
+}
+
+.payment-option:hover{
+border-color:#d4af37;
+}
+
+/* ORDER SUMMARY */
+
+.summary-items{
+margin-bottom:20px;
+}
+
+.summary-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+color:#ccc;
+}
+
+.summary-total{
+border-top:1px solid #333;
+padding-top:15px;
+}
+
+.summary-row.total{
+font-size:18px;
+color:#d4af37;
+font-weight:bold;
+}
+
+.free{
+color:#2ecc71;
+}
+
+/* BUTTON */
+
+.gold-button{
+background:#d4af37;
+border:none;
+padding:12px;
+color:#000;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gold-button:hover{
+background:#b8962e;
+}
+
+.full-btn{
+width:100%;
+margin-top:20px;
+}
+
+/* STICKY */
+
+.sticky{
+position:sticky;
+top:100px;
+}
+
+/* EMPTY CART */
+
+.empty-cart{
+text-align:center;
+margin:120px 0;
+}
+
+.empty-cart h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.empty-cart p{
+color:#777;
+margin-bottom:20px;
+}
+
+
+
+/* success section */
+
+
+/* GO BACK button */
+
+.back-btn{
+position:absolute;
+top:25px;
+right:40px;
+background:linear-gradient(45deg,#d4af37,#b8860b);
+border:none;
+padding:10px 20px;
+border-radius:20px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.back-btn:hover{
+box-shadow:0 0 15px rgba(212,175,55,0.6);
+transform:translateY(-2px);
+}
+
+/* center image */
+
+.pay{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.pay img{
+width:480px;
+animation:fadeUp 0.8s ease;
+}
+
+/* animation */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.checkout-layout{
+grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body onload="checkAuth('user');">
+    <nav class="navbar">
+        <div class="brand">
+            <a href="./user.html" class="logo">AURORA CHECKOUT</a>
+        </div>
+        <div class="link">
+            <a href="./user.html">BACK TO SITE</a>
+        </div>
+
+    </nav>
+
+    <main class="Checkout">
+        <h1 class="title">Complete Your Purchase</h1>
+        <div id="checkout-container" class="checkout-place">
+            <!-- Checkout content injected here -->
+        </div>
+    </main>
+
+    
+
+    <script src="index.js"></script>
+    <script src="user.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

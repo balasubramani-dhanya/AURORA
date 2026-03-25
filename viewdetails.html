@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./viewdetails.css">
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body onload="checkAuth('user');">
+    <nav class="navbar">
+        <a href="./user.html" class="logo">AURORA</a>
+
+        <ul class="nav-links" id="navLink">
+            <li><a href="./user.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.htm">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#" id="logout">LogOut</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="menuToggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hearttoggle" id="heart-toggle">
+                <i class="fa-regular fa-heart"></i>
+                <sup class="heart-count" id="heart-count">0</sup>
+                <div class="heart-dropdown" id="heart-dropdown"></div>
+            </div>
+            <div class="carttoggle" id="cart-toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <sup class="cart-count" id="cart-count">0</sup>
+                <div class="cart-dropdown" id="cart-dropdown"></div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <section class="view" id="view">
+
+        <div id="product-details-container">
+            <!-- Details injected here -->
+            <div class="loading">
+                <div class="animate-pulse ">Loading Masterpiece...</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./index.js"></script>
+    <script src="./user.js"></script>
+    <script src="./viewdetails.js"></script>
+</body>
+
+</html>

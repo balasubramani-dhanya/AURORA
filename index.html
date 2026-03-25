@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body class="login-page">
+
+    <div class="form" id="login">
+
+        <h1>LOGIN</h1>
+        <input type="text" name="Uname" placeholder="Enter Your Username" id="Uname" required>
+        <div></div>
+        <input type="password" name="password" placeholder="Enter Your Password" id="password" required>
+        <div></div>
+        <div class="role-container">
+
+            <label for="role">Login as</label>
+            <select id="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+
+        </div>
+        <button type="submit" onclick="Login()">Login</button>
+        <p class="create">Don't have an account?
+            <a href="./register.html">Register Here</a>
+        </p>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+
+</html>
